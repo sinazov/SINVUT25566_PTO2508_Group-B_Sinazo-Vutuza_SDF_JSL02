@@ -1,54 +1,81 @@
-**Kanban Board Project**
+**Task Entry System**
+Project Description
 
-##Project Description
-
-This Kanban Board is a responsive web application designed to help users visually organize tasks across different stages of progress: TODO, DOING, and DONE. The interface adapts seamlessly between laptop and mobile views, providing an intuitive user experience with clear visual cues and an accessible layout. The project demonstrates clean HTML and CSS practices, focusing on usability, responsiveness, and clean design.
+The Task Input and Status Validation System is a JavaScript-based application that allows users to input, validate, and track tasks efficiently. Users can enter task titles, descriptions, and statuses, with automatic input validation to ensure consistent data formatting. Completed tasks are displayed in the console, and if no tasks are completed, a motivational message encourages productivity. This project emphasizes clear logic, user-friendly interaction, and maintainable code structure.
 
 **Technologies Used**
 
-HTML5 for structured content and semantic markup
+HTML5 – for structuring the web page
 
-CSS3 for layout, styling, and responsive design
+JavaScript – for interactive prompts, validation, and console logging
 
-Flexbox and CSS Grid for flexible, modern layouts
+Browser Console – to display completed tasks and messages
 
-Custom fonts: Plus Jakarta Sans for a clean, modern appearance
+Features
+Created
 
-SVG icons and emojis for intuitive visual indicators
+Prompt users to enter title, description, and status for two separate tasks.
 
-**Features Created and Updated**
+Automatically convert status input to lowercase to maintain formatting consistency.
 
-Responsive design: Sidebar visible on laptop, hidden on mobile to optimize space
+Validate status to allow only "todo", "doing", or "done".
 
-Mobile-first header update: Displays a favicon next to the project title ("Launch Career") only on mobile devices
+Alert users of invalid status and repeatedly prompt until a valid input is entered.
 
-**Task boards with columns: TODO, DOING, DONE with task cards, including icons and emoji annotations.While certain emojis were not matched accordingly to the brief,I used my own discretion and emojipedia was used.**
+Store both tasks’ titles, descriptions, and statuses in separate variables.
 
-Consistent and clean UI: Rounded cards, clear typography, color-coded progress dots
+Display completed tasks in the console with title and status.
 
-Accessibility considerations: Proper alt attributes on images and semantic HTML
+Show a motivational message if no tasks are marked as "done".
 
-Clean and modular CSS: Separation of concerns with well-named classes and media queries
+**Usage Instructions**
 
-Well-structured code: Logical indentation, spacing, and commenting where appropriate
-Usage Examples and Interaction Instructions
+Open the project in a browser.
 
-**Viewing on laptop:**
+The system will prompt you for Task 1 details:
 
-Sidebar with full Kanban logo and board navigation appears on the left
+Title
 
-Main content area displays task columns side-by-side
+Description
 
-**Viewing on mobile:**
+Status (todo, doing, or done)
 
-Sidebar hides automatically to maximize screen space
+The system will then prompt for Task 2 details similarly.
 
-Header displays the favicon next to the "Launch Career" title, aligned left
+Input for status is case-insensitive. Invalid statuses will trigger an alert and re-prompt.
 
-Task columns stack vertically for easy scrolling
+After entering both tasks:
 
-**Task cards:**
+If a task is marked as "done", its title and status will appear in the browser console.
 
-Each card displays a task with relevant emojis
+If no tasks are completed, a motivational message is displayed:
 
-Cards can be clicked (cursor pointer) for potential interactivity (future enhancements)
+No tasks completed, let's get to work!
+
+**Working Example**
+
+User Interaction Example:
+
+Prompt: Enter task 1 title:
+> Finish homework
+
+Prompt: Enter task 1 description:
+> Complete math and science exercises
+
+Prompt: Enter task 1 status (todo, doing, done):
+> Done
+
+Prompt: Enter task 2 title:
+> Clean room
+
+Prompt: Enter task 2 description:
+> Organize desk and clothes
+
+Prompt: Enter task 2 status (todo, doing, done):
+> Doing
+
+
+Console Output:
+
+Title: Finish homework, Status: done
+
