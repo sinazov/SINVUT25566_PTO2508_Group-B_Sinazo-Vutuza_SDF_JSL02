@@ -38,3 +38,17 @@ while (
     "Enter task 2 status (todo, doing, done):",
   ).toLowerCase();
 }
+// Check if task1 is done, and log it if so
+if (task1Status === "done") {
+  console.log("Title: " + task1Title + ", Status: " + task1Status);
+}
+
+// Check if task2 is done, and log it if so
+if (task2Status === "done") {
+  console.log("Title: " + task2Title + ", Status: " + task2Status);
+}
+
+// If neither task1 nor task2 is done, show a motivational message
+if (task1Status !== "done" && task2Status !== "done") {
+  console.log("No tasks completed, let's get to work!");
+}
