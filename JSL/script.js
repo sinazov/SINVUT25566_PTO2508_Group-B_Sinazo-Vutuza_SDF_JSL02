@@ -17,3 +17,6 @@ while (
     "Enter task 1 status (todo, doing, done):",
   ).toLowerCase();
 }
+// Ask the user for the title and description of task 2
+const task2Title = prompt("Enter task 2 title:");
+const task2Description = prompt("Enter task 2 description:");
